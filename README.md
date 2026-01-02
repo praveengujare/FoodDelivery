@@ -51,16 +51,16 @@ This project focuses on clean UI, smooth user experience, and strong backend log
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login Page](Flow/login.png)
+![Login Page](Flow/login.png.png)
 
 ### 📝 Register Page
-![Register Page](Flow/register.png)
+![Register Page](Flow/register.png.png)
 
 ### 🍽️ Restaurant & Menu Page
-![Menu Page](Flow/menu.png)
+![Menu Page](Flow/menu.png.png)
 
 ### 🛒 Cart Page
-![Cart Page](Flow/cart.png)
+![Cart Page](Flow/cart.png.png)
 
 ### 💳 Checkout Page
 ![Checkout Page](Flow/orderBill.png)
