@@ -56,10 +56,10 @@ This project focuses on clean UI, smooth user experience, and strong backend log
 ### 📝 Register Page
 ![Register Page](Flow/register.png.png)
 
-### 🍽️  Menu Page
+### 🍽️  Restaurant Page
 ![Restaurant Page](Flow/Restaurant.png.png)
 
-### 🍽️ Restaurant & Menu Page
+### 🍽️  Menu Page
 ![Menu Page](Flow/menu.png.png)
 
 ### 🛒 Cart Page
