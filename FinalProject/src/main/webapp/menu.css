@@ -1,0 +1,241 @@
+/* ===========================
+   RESET & BASE STYLES
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 2rem 1rem 1.5rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtitle {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* ===========================
+   CATEGORY FILTER
+   =========================== */
+.category-filter {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.category-btn {
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #374151;
+  transition: all 0.25s ease;
+}
+
+.category-btn:hover {
+  background: #fff7ed;
+  border-color: #fdba74;
+  color: #ea580c;
+}
+
+.category-btn.active {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #ffffff;
+}
+
+/* ===========================
+   MENU GRID
+   =========================== */
+.menu-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===========================
+   MENU CARD
+   =========================== */
+.menu-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================
+   IMAGE SECTION
+   =========================== */
+.image-container {
+  position: relative;
+  height: 180px;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+
+.menu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover .menu-image {
+  transform: scale(1.08);
+}
+
+/* ===========================
+   BADGE
+   =========================== */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #22c55e;
+  color: #ffffff;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+/* ===========================
+   CARD CONTENT
+   =========================== */
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.item-price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ea580c;
+}
+
+/* ===========================
+   DESCRIPTION
+   =========================== */
+.item-description {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+/* ===========================
+   ADD TO CART BUTTON
+   =========================== */
+.order-btn {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #fff7ed;
+  color: #ea580c;
+  transition: all 0.3s ease;
+}
+
+.order-btn:hover {
+  background: #ea580c;
+  color: #ffffff;
+}
+
+.order-btn:active {
+  transform: scale(0.97);
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 1.2rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.footer-small {
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 640px) {
+  .header-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .menu-grid {
+    gap: 1rem;
+  }
+
+  .image-container {
+    height: 160px;
+  }
+}

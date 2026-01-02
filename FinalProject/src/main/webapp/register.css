@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #ff512f, #f09819);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper */
+.register-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.register-card {
+    width: 420px;
+    padding: 35px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 28px 45px rgba(0, 0, 0, 0.28);
+    text-align: center;
+    animation: slideUp 0.8s ease;
+}
+
+/* Logo */
+.logo {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 15px;
+}
+
+/* Title */
+.register-card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 13px;
+    color: #999;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: white;
+    padding: 0 6px;
+}
+
+/* Floating label */
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+    top: -6px;
+    font-size: 12px;
+    color: #ff7a18;
+}
+
+/* Focus */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff7a18;
+}
+
+/* Button */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff7a18, #ff512f);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(255, 122, 24, 0.45);
+}
+
+/* Extra links */
+.extra-links {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #555;
+}
+
+.extra-links a {
+    color: #ff7a18;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
